@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+}
+section {
+    display: flex;
+    padding: 2.4em;
+    flex-direction: row;
+}
+a, h1, h2, h3, h4, h5, h6 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+}
+button > h5 {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+.header, .services__block, .projects__block {
+    justify-content: center;
+    display: flex;
+    flex-flow: row wrap;
+    }
+.header__text, .service__text, .footer__title > h6, .footer__copyright > h6 {
+    opacity: 0.4;
+    transition: 0.3s linear;
+}
+.header__text:hover, .service__text:hover, .footer__title > h6:hover, .footer__copyright > h6:hover {
+    opacity: 1;
+    /* color: black; */
+}
+.footer h2, .footer h5, .footer h6 {
+    color: white;
+}
+.footer {
+    background: #316099;
+    flex-flow: row wrap;
+    color: white;
+}
+.footer__block {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+.footer__btn {
+    width: 40%;
+    text-align: right;
+    align-self: center;
+}
+.footer__btn > a {
+    background: #5A98D0;
+    border: white;
+    border-radius: 0;
+    padding: 0.7em 3em;
+    color: white;
+}
+.footer__contact {
+    width: 20%;
+    padding: 0 4.5em 0 0;
+    text-align: justify;
+}
+.footer__title {
+    padding: 0 2.6em 0 0;
+    width: 50%;
+}
+.header__block {
+    width: 50%;
+}
+.header__block > img {
+    width: 100%
+}
+.header__btn {
+    margin: 5em 0;
+}
+.header__btn > a {
+    background: #5A98D0;
+    border: white;
+    border-radius: 0.3em;
+    padding: 0.7em 3em;
+    color: white;
+}
+.navbar > div {
+    width: 25%;
+    align-self: center;
+}
+.navbar__adress-book {
+    margin: 0 0 0 50%;
+    text-align: right;
+}
+.projects__block > div > img {
+    width: 100%;
+}
+.projects_big-one, .projects_little-one {
+    padding: 1em 1em;
+}
+.services__title, .projects__title {
+    height: fit-content;
+    text-align: center;
+}
+.service {
+    text-align: center;
+    margin: 1em;
+    background: #FFFFFF;
+    box-shadow: 5px 20px 50px rgb(16 112 177 / 20%);
+    border-radius: 10px;
+}
+.services, .projects {
+    flex-direction: column;
+    }
+.services__service {
+    width: 30%;
+}
+@media (max-width: 1356px) {
+    .projects_little-one {
+        width: 45%;
+    }
+}
+@media (max-width: 768px) {
+    .header__block {
+        width: 80%;
+    }
+    .services__block {
+        flex-direction: column;
+    }
+    .services__service {
+        width: auto;
+    }
+    .projects_little-one {
+        width: auto;
+    }
+    .footer__contact {
+        width: 80%;
+        padding: 0;
+    }
+}
+@media (max-width: 498px) {
+    .footer__btn {
+        width: auto;
+    }
+}

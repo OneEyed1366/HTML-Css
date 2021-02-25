@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+}
+section {
+    display: flex;
+    padding: 2.4em;
+    flex-flow: row wrap;
+}
+a, h1, h2, h3, h4, h5, h6 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    /* color: #1F3F68; */
+}
+button > h5 {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+textarea {
+    opacity: 0.4;
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.header__text, .footer__title > h6, .footer__copyright > h6 {
+    opacity: 0.4;
+    transition: 0.3s linear;
+}
+.header__text:hover, .footer__title > h6:hover, .footer__copyright > h6:hover {
+    opacity: 1;
+    /* color: black; */
+}
+.footer h2, .footer h5, .footer h6 {
+    color: white;
+}
+.footer {
+    background: #316099;
+    flex-flow: row wrap;
+    color: white;
+}
+.footer__block {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+.footer__btn {
+    width: 40%;
+    text-align: right;
+    align-self: center;
+}
+.footer__btn > a {
+    background: #5A98D0;
+    border: white;
+    border-radius: 0;
+    padding: 0.7em 3em;
+    color: white;
+}
+.footer__contact {
+    width: 20%;
+    padding: 0 4.5em 0 0;
+    text-align: justify;
+}
+.footer__title {
+    padding: 0 2.6em 0 0;
+    width: 50%;
+}
+.navbar > div {
+    width: 25%;
+    align-self: center;
+}
+.navbar__adress-book {
+    margin: 0 0 0 50%;
+    text-align: right;
+}
+.header {
+    background: url("img/contact/bg.jpg") no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+.header__title, .header__text {
+    width: 100%;
+}
+.header__text {
+    padding: 0 5em;
+}
+.contact__block {
+    width: 40%;
+    padding: 1em 0 0 4.5em;
+    display: flex;
+    flex-flow: row wrap;
+}
+.contact__form {
+}
+.contact__img {/* padding: 0 3em; */}
+.contact__map {
+}
+.contact__text {
+    width: 70%;
+    /* padding: 0 3em; */
+}
+.contact__text > h4, .form__title {
+    text-transform: uppercase;
+}
+.contact__title {
+    
+}
+.form__block {
+    text-transform: none;
+}
+.form__title {
+    margin: 0 0 3em 0;
+}
+.form__btn {
+    margin: 5em 0;
+}
+.form__btn > button {
+    text-transform: uppercase;
+    width: 100%;
+    background: #5A98D0;
+    border: white;
+    border-radius: 0.3em;
+    padding: 1.3em 3em;
+    color: white;
+}
+@media (max-width: 796px) {
+    .footer__contact {
+        width: 80%;
+        padding: 0;
+    }
+    .contact__block {
+        width: 80%;
+    }
+}
+@media (max-width: 498px) {
+    .footer__btn {
+        width: auto;
+    }
+}
