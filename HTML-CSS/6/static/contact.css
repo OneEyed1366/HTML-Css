@@ -31,7 +31,9 @@ textarea {
 }
 .header__text:hover, .footer__title > h6:hover, .footer__copyright > h6:hover {
     opacity: 1;
-    /* color: black; */
+}
+.footer h2, .footer h5, .footer h6 {
+    color: white;
 }
 .footer h2, .footer h5, .footer h6 {
     color: white;
@@ -76,13 +78,11 @@ textarea {
     text-align: right;
 }
 .header {
+    /* width: 80%; */
     background: url("img/contact/bg.jpg") no-repeat;
     background-size: cover;
     text-align: center;
     color: white;
-}
-.header__title, .header__text {
-    width: 100%;
 }
 .header__text {
     padding: 0 5em;
@@ -93,10 +93,8 @@ textarea {
     display: flex;
     flex-flow: row wrap;
 }
-.contact__form {
-}
-.contact__img {/* padding: 0 3em; */}
-.contact__map {
+.contact__block > .contact__img > img {
+    width: 100%;
 }
 .contact__text {
     width: 70%;
@@ -104,9 +102,6 @@ textarea {
 }
 .contact__text > h4, .form__title {
     text-transform: uppercase;
-}
-.contact__title {
-    
 }
 .form__block {
     text-transform: none;
@@ -136,6 +131,15 @@ textarea {
     }
 }
 @media (max-width: 498px) {
+    section {
+        padding: 1em;
+    }
+    .header__text {
+        padding: 0;
+    }
+    .contact__block {
+        padding: 0;
+    }
     .footer__btn {
         width: auto;
     }
